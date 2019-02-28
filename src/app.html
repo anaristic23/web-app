@@ -1,0 +1,38 @@
+<template>
+  <div class="container">
+  <form class="form-row" submit.trigger="register()">
+    <div class="container form-row">
+      <div class="col-md-4 mb-3 ">
+        <label>First name</label>
+        <input
+          class="form-control"
+          type="text"
+          value.bind="name"
+          placeholder="Name"
+          reqired
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label>Last name</label>
+        <input
+          class="form-control"
+          type="text"
+          value.bind="surname"
+          placeholder="Last Name"
+          reqired
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label>E-mail</label>
+        <input
+          class="form-control"
+          type="text"
+          value.bind="email"
+          placeholder="E-mail"
+        />
+      </div>
+      <button class="btn btn-outline-success" type="submit">Register</button>
+    </div>
+  </form>
+  </div>
+</template>
